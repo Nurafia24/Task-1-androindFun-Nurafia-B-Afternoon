@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/flower2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cd_black"/>
+<!--        android:id="@+id/img_rectangle"-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_black"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:backgroundTint="@color/coklatmuda"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/playfairdisplaysemibold"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="70dp"-->
+<!--            android:text="Create Your Account"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="15dp" -->
+<!--            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:id="@+id/textView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USERNAME"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_editor_absoluteY="352dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_conversion_absoluteWidth="80dp"
+                android:id="@+id/tv_username"/>
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:hint="enter your username"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/white"
+                tools:layout_conversion_absoluteHeight="45dp"
+                tools:layout_editor_absoluteY="379dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_conversion_absoluteWidth="371dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_editor_absoluteY="352dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_conversion_absoluteWidth="80dp"
+                android:id="@+id/tv_password"/>
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:hint="enter your password"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/white"
+                tools:layout_conversion_absoluteHeight="45dp"
+                tools:layout_editor_absoluteY="379dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_conversion_absoluteWidth="371dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONFIRM PASWORD"
+                android:textColor="@color/white"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_editor_absoluteY="434dp"
+                tools:layout_editor_absoluteX="20dp"
+                android:padding="10dp"
+                tools:layout_conversion_absoluteWidth="74dp"
+                android:id="@+id/tv_confirm_password"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:hint="enter your confirm password"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/white"
+                tools:layout_conversion_absoluteHeight="45dp"
+                tools:layout_editor_absoluteY="461dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_conversion_absoluteWidth="371dp"
+                android:drawableEnd="@drawable/ic_eye"
+                android:padding="10dp"
+                android:id="@+id/edt_confirm_password"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:height="50dp"
+                android:text="Register"
+                android:backgroundTint="@color/pink"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="64dp"-->
+    <!--        android:text="login"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_username"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="48dp"-->
+    <!--        android:text="username"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.097"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/edt_username"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_username" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_password"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="48dp"-->
+    <!--        android:text="password"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.097"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/edt_username" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/edt_password"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_password" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_Login"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Login"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/edt_password" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/history_tv"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="48dp"-->
+    <!--        android:text="history"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.097"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btn_Login" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="coklatmuda">#d5bdaf</color>
+    <color name="coklatua">#583101</color>
+    <color name="coklatua1">#463f3a</color>
+    <color name="pink">#cf8e80</color>
+<!--    <color name="coklatua">#583101</color>-->
+
+</resources>
