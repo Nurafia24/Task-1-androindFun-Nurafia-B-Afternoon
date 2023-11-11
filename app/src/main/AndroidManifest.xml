@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Task1AndroFundNurafiaBAfternoon"
         tools:targetApi="34">
         <activity
+            android:name=".activity_house"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
